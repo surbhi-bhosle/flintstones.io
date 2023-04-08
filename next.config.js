@@ -17,9 +17,10 @@ const version = String(VERSION);
 
 console.log(`\n\nRunning version: ${version}\n`);
 
-const isProduction = 'production' === `${process.env.NODE_ENV}`;
+// const isProduction = 'production' === `${process.env.NODE_ENV}`;
 
-const basePath = isProduction ? `/${package.name}` : '';
+// const basePath = isProduction ? `/${package.name}` : '';
+const basePath = '';
 
 /**
  * @type {import('next').NextConfig}

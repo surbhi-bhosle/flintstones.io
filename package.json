@@ -25,7 +25,7 @@
     "serve-nextjs-output": "serve out -l 3000",
     "serve": "run-s build next:start",
     "serve:ci": "cross-env NODE_ENV=local run-s build:ci serve-nextjs-output",
-    "predeploy:gh-pages": "touch out/.nojekyll",
+    "predeploy:gh-pages": "touch out/.nojekyll && touch out/CNAME && echo \"flintstones.io\" >> out/CNAME",
     "deploy:gh-pages": "gh-pages -d out --dotfiles",
     "deploy": "run-s build:ci deploy:gh-pages",
     "ci": "cross-env NODE_ENV=production run-s build:ci",
