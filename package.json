@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-ssg",
-  "version": "4.12.0",
+  "name": "flintstones.io",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "unset:git-hooks-path": "git config --unset core.hooksPath",
